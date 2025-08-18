@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 	
 	//Visão geral da vila
 	
-	printf("\n********************vila****************\n\n");
+	printf("\n******************** vila ****************\n\n");
 	printf("(1) Missões\n");
 	printf("(2) Sala de Treinamento\n");
 	printf("(3) Torneio Ninja\n");
@@ -18,5 +18,19 @@ int main(int argc, char *argv[])
 	printf("(6) Casa\n\n\n");
 	printf("(7) SAIR");
 	
+	
+	
+	
+	//Visão geral da casa
+
+    printf("\n**********Casa********\n\n");
+    printf("Ghenisson                         Level ->   \n\n");
+    printf(" Chakra->                           Quantidade->        \n");
+    printf(" Armas->                            Level->        \n");
+    printf(" Taijutsu->                          Level->        \n");
+    printf(" Jutsu->                              Level->        \n");
+	printf(" Invocação ->                     Level->        \n\n");
+    
+    printf(" Armazen \n");
 	return 0;
 }
