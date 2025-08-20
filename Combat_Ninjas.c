@@ -1,14 +1,12 @@
+
 #include<stdio.h>
 #include<stdlib.h>
 
-int main(int argc, char *argv[])
-{
-	printf("****************** Ninjas Combat **********************\n\n");
-	system("pause");
-	system("cls");
-	
-	//Visão geral da vila
-	
+//O jogo terá funções para cada bloco de alresentacao em tela
+
+
+//Função mostrando visão geral da vila
+int menu_vila(){
 	printf("\n******************** vila ****************\n\n");
 	printf("(1) Missões\n");
 	printf("(2) Sala de Treinamento\n");
@@ -20,10 +18,29 @@ int main(int argc, char *argv[])
 	
 	
 	
+	return 0;
 	
-	//Visão geral da casa
+}
 
-    printf("\n**********Casa********\n\n");
+
+//Função de Abertura de jogo 
+int abertura(){
+	printf("****************** Ninjas Combat **********************\n\n");
+	system("pause");
+	system("cls");
+	
+	
+	menu_vila();
+	
+	return 0;
+}
+
+
+
+//Função mostrando as skins do personagens aqui ele poderá colocar acessorios  
+
+void  casa(){ 
+   printf("\n**********Casa********\n\n");
     printf("Ghenisson                         Level ->   \n\n");
     printf(" Chakra->                           Quantidade->        \n");
     printf(" Armas->                            Level->        \n");
@@ -32,5 +49,13 @@ int main(int argc, char *argv[])
 	printf(" Invocação ->                     Level->        \n\n");
     
     printf(" Armazen \n");
+}
+
+int main(int argc, char *argv[])
+{
+	
+	abertura();
+
+    
 	return 0;
 }
