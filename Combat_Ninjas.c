@@ -1,6 +1,6 @@
-
 #include<stdio.h>
 #include<stdlib.h>
+#include<locale.h>
 
 //O jogo terá funções para cada bloco de alresentacao em tela
 
@@ -14,9 +14,26 @@ int menu_vila(){
 	printf("(4) Mercado\n");
 	printf("(5) Restaurante\n");
 	printf("(6) Casa\n\n\n");
-	printf("(7) SAIR");
+	printf("(7) SAIR\n\n");
 	
-	
+//Aqui está estrutura switch que ira acionar uma fução correspondente ao item do menu
+         printf("Escolha uma opção:\n\n");
+         int opcao =1;
+    	while(opcao != 0){
+    	scanf("%d",&opcao);
+		switch(opcao){
+		       
+		       case 1 : 
+		              printf("uma função foi chamada");
+		              break;
+		       case 2 : 
+		              printf("uma outra função foi chamada");
+		              break;
+		       default:
+		              printf("opção invalida");
+		              break;
+		}
+	  }
 	
 	return 0;
 	
@@ -54,7 +71,12 @@ void  casa(){
 int main(int argc, char *argv[])
 {
 	
+	
+	
+	setlocale(LC_ALL, "Portuguese");
 	abertura();
+	
+	
 
     
 	return 0;
